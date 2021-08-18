@@ -1,0 +1,19 @@
+
+
+  <form method="post" action="/">
+    <div class="mb-3">
+      <label for="url" class="form-label">Enter Your Site</label>
+      <input type="url" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="url" id="url" value="https:/">
+      <div id="emailHelp" class="form-text" >Make Sure The Site is Valid (With https:/)</div>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <% if (shortUrl !== null) { %>
+      <h2>Your Link is /<%= shortUrl %></h2>
+    <% } %>
+    
+  </form>
